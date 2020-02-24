@@ -1,0 +1,21 @@
+# Stage file for the Development environment
+
+# Specify the prefix
+prefix: "weu-dev"
+
+tags:
+  "created by": "Terraform"
+  "stage": "development"
+
+# Address space of the network
+address_space: "10.0.0.0/16"
+
+# All the subnets in the network
+subnets:
+  "AzureFirewallSubnet": "10.0.0.0/24"
+  "bastion": "10.0.1.0/24"
+  "aks": "10.0.2.0/24"
+  "rob": "10.0.3.0/24"
+
+# Bastion network name
+bastion_network_name: "bastion"
